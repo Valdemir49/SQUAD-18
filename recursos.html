@@ -3,43 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Padrão</title>
+    <title>Página </title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fff;
+            line-height: 1.6;
         }
         header {
-            background-color: #333;
+            background-color: #007BFF;
             color: #fff;
             padding: 1rem;
             text-align: center;
+            width: 100%;
         }
         main {
             padding: 2rem;
         }
         footer {
-            background-color: #333;
+            background-color: #007BFF;
             color: #fff;
             text-align: center;
-            padding: 1rem;
-            position: fixed;
+            padding: 0.1rem;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
+        #texto-motivador{
+            font-size: 20px; 
+            font-weight: bold;
+            text-align: left;;
+        }
+        #image1{
+            width: 100%; /* A largura da imagem será 100% do contêiner pai */
+            height: auto; auto; /* A altura será ajustada automaticamente para manter a proporção */
+            border: 2px solid #007BFF;
+            display: block;
+            margin: 0 auto;
+        }
+        /*botões */
+        .meu-botao {
+            background-color:  #007BFF; /* Cor de fundo verde */
+            color: white; /* Cor do texto branca */
+            padding: 2% 4%; /* Espaçamento interno */
+            text-align: center; /* Alinhamento do texto */
+            text-decoration: none; /* Sem sublinhado */
+            display: inline-block; /* Exibição em linha */
+            font-size: 2vw; /* Tamanho da fonte em unidades de viewport */
+            margin: 1% 0.5%; /* Margem */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            border: none; /* Sem borda */
+            border-radius: 4px; /* Bordas arredondadas */
+        }
+        .ferramentas{
+            font-size: 14px; 
+        }
+        /* contêiner */
+        .container {
+            display: flex;
+            overflow-x: scroll; /* Permite a rolagem horizontal */ 
+            width: 100vw; /* Largura do contêiner igual à largura da viewport */
+        }
+
+        /* blocos */
+        .bloco {
+            border: 1px solid #007BFF; /* Borda preta */
+            padding: 10px; /* Espaçamento interno */
+            margin: 10px; /* Margem */
+            background-color: #f9f9f9; /* Cor de fundo */
+            min-width: 300px; /* Largura dos blocos */
+            box-sizing: border-box; /* Inclui a borda e o padding na largura total */
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Página Padrão</h1>
+        <h1>Recursos para Pessoas com Deficiência Intelectual</h1>
     </header>
     <main>
-        <p>Este é um exemplo de uma página HTML padrão.</p>
+        <p id="texto-motivador">Bem-vindo à nossa página dedicada a fornecer informações e ferramentas para apoiar pessoas com deficiência intelectual. Aqui, você encontrará uma variedade de recursos que visam promover a inclusão, a autonomia e a qualidade de vida.</p>
+
+        <img id="image1" src="imagens recursos/image.recursos2.jpeg">
+
+        <button class="meu-botao">Tecnologia assistiva</button>
+        <button class="meu-botao">Botão 1</button>
+        <button class="meu-botao">Botão 1</button>
+        <button class="meu-botao">Botão 1</button>
+        <button class="meu-botao">Botão 1</button>
+
+        <h1>A tecnologia assistiva </h1>
+
+        <p>Segundo a <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d6949.htm" target="_blank">Convenção Sobre os Direitos das Pessoas com Deficiência </a>, “as pessoas com deficiência têm impedimentos de natureza física, intelectual ou sensorial, os quais, em interação com diversas barreiras, podem obstruir sua participação plena e efetiva na sociedade com as demais pessoas”</p>
+
+        <p>A tecnologia assistiva (TA) é o ramo que visa eliminar essas barreiras, para aumentar a participação, inclusão social, autonomia, qualidade de vida e independência das pessoas com deficiência ou mobilidade reduzida.</p>
+
+        <p>Ao falar sobre deficiências, é importante ter em mente o conceito de multiplicidade. As pessoas com deficiência não seguem um padrão e têm necessidades distintas. Por isso, reunimos abaixo uma lista de aplicativos e sites que agem de forma a ampliar a mobilidade, comunicação e habilidades de aprendizado:</p>
+
+        <div class="container">
+            <div class="bloco">
+                <h1 class="ferramentas"> <a href="https://www.handtalk.me/br/sobre/" target="_blank">Hand Talk </a> </h1>
+                <p>O aplicativo é um tradutor simultâneo de idiomas e utiliza uma persona 3D, chamada Hugo, para realizar a tradução digital e automática para os surdos que utilizam a Língua Brasileira de Sinais (Libras), e também para aqueles que querem se comunicar mesmo não tendo conhecimento sobre Libras.</p>
+            </div>
+            <div class="bloco">
+                <h1 class="ferramentas"> <a href="https://guiaderodas.com/">Be My Eyes </a> </h1>
+                <p>O app mapeia estabelecimentos comerciais com acessibilidade para pessoas que utilizam cadeira de rodas ou tenham mobilidade reduzida. A ideia é que os usuários observem o ambiente e relatem a existência de rampas ou a largura da porta, disponibilizando a informação para todos.</p>
+                
+            </div>
+            <div class="bloco">
+                <h1 class="ferramentas"> <a href="https://www.seeingai.com/">Seeing AI </a> </h1>
+                <p>O aplicativo gratuito utiliza a câmera do smartphone e inteligência artificial para descrever pessoas, textos e objetos para quem não enxerga ou tem baixa visão. Usa a visão computacional e redes neurais para identificar objetos, cores, textos, cenas e até mesmo características físicas e expressões faciais de uma pessoa. Pode ser utilizado para organizar documentos em pastas e reconhecer as legendas das fotos nas redes sociais.</p>
+            </div>
+            <div class="bloco">
+                <h1 class="ferramentas"> <a href="https://sites.usp.br/sofiafala/">SofiaFala </a> </h1>
+                <p>O software ajuda a aprimorar a comunicação verbal daqueles que têm dificuldade no desenvolvimento da fala, como pessoas com síndrome de Down. Capta sons e imagens, produzidos durante a execução do exercício fonoaudiológico, e depois os analisa, oferecendo dois tipos de respostas sobre a performance do usuário: uma lúdico-educacional, com orientações para o paciente e/ou o responsável pelo treino; outra, com dados métricos e estatísticos para o fonoaudiólogo avaliar, acompanhar e orientar a evolução clínica do usuário.</p>
+                
+            </div>
+        </div>
+
     </main>
     <footer>
-        <p>&copy; 2025 Sua Empresa</p>
+        <p>&copy; 2025 - Informações sobre PCDs</p>
     </footer>
 </body>
 </html>
