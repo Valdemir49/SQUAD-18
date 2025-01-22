@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página </title>
+    <title>Página</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,7 +34,7 @@
         #texto-motivador{
             font-size: 20px; 
             font-weight: bold;
-            text-align: left;;
+            text-align: center;;
         }
         #image1{
             width: 100%; /* A largura da imagem será 100% do contêiner pai */
@@ -43,19 +43,29 @@
             display: block;
             margin: 0 auto;
         }
+        .meu-texto{
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Altura do contêiner igual à altura da viewport */
+            text-align: left; /* Centraliza o texto dentro dos parágrafos */
+            width: 70%;
+            margin: 0 auto;
+            
+        }
         /*botões */
         .meu-botao {
             background-color:  #007BFF; /* Cor de fundo verde */
             color: white; /* Cor do texto branca */
-            padding: 2% 4%; /* Espaçamento interno */
+            padding: 1% 2%; /* Espaçamento interno */
             text-align: center; /* Alinhamento do texto */
             text-decoration: none; /* Sem sublinhado */
             display: inline-block; /* Exibição em linha */
-            font-size: 2vw; /* Tamanho da fonte em unidades de viewport */
+            font-size: 1vw; /* Tamanho da fonte em unidades de viewport */
             margin: 1% 0.5%; /* Margem */
             cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
             border: none; /* Sem borda */
             border-radius: 4px; /* Bordas arredondadas */
+
         }
         .ferramentas{
             font-size: 14px; 
@@ -64,7 +74,7 @@
         .container {
             display: flex;
             overflow-x: scroll; /* Permite a rolagem horizontal */ 
-            width: 100vw; /* Largura do contêiner igual à largura da viewport */
+            width: 65vw; /* Largura do contêiner igual à largura da viewport */
         }
 
         /* blocos */
@@ -86,46 +96,133 @@
     <main>
         <p id="texto-motivador">Bem-vindo à nossa página dedicada a fornecer informações e ferramentas para apoiar pessoas com deficiência intelectual. Aqui, você encontrará uma variedade de recursos que visam promover a inclusão, a autonomia e a qualidade de vida.</p>
 
-        <img id="image1" src="imagens recursos/image.recursos2.jpeg">
+        <img id="image1" src="imagens recursos/image.recursos.1.jpg">
 
-        <button class="meu-botao">Tecnologia assistiva</button>
-        <button class="meu-botao">Botão 1</button>
-        <button class="meu-botao">Botão 1</button>
-        <button class="meu-botao">Botão 1</button>
-        <button class="meu-botao">Botão 1</button>
+        <button class="meu-botao" onclick="scrollToSection('tec-assis')">Tecnologia assistiva</button>
+        <button class="meu-botao" onclick="scrollToSection('edc-inclu')">Educação Inclusiva</button>
+        <button class="meu-botao" onclick="scrollToSection('apo-psico')">Apoio Psicossocial</button>
+        <button class="meu-botao" onclick="scrollToSection('dir-legis')">Direitos e Legislação</button>
+        <button class="meu-botao" onclick="scrollToSection('sau-bem')">Saúde e Bem-Estar</button>
+        <button class="meu-botao" onclick="scrollToSection('com-inclu')">Comunidade e Inclusão Social</button>
 
-        <h1>A tecnologia assistiva </h1>
 
-        <p>Segundo a <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d6949.htm" target="_blank">Convenção Sobre os Direitos das Pessoas com Deficiência </a>, “as pessoas com deficiência têm impedimentos de natureza física, intelectual ou sensorial, os quais, em interação com diversas barreiras, podem obstruir sua participação plena e efetiva na sociedade com as demais pessoas”</p>
+        <!-- A função scrollToSection usa o método scrollIntoView para rolar suavemente até o elemento com o ID correspondente. --> 
 
-        <p>A tecnologia assistiva (TA) é o ramo que visa eliminar essas barreiras, para aumentar a participação, inclusão social, autonomia, qualidade de vida e independência das pessoas com deficiência ou mobilidade reduzida.</p>
+        <script>
+            function scrollToSection(id){
+                document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+            }
+        </script>
 
-        <p>Ao falar sobre deficiências, é importante ter em mente o conceito de multiplicidade. As pessoas com deficiência não seguem um padrão e têm necessidades distintas. Por isso, reunimos abaixo uma lista de aplicativos e sites que agem de forma a ampliar a mobilidade, comunicação e habilidades de aprendizado:</p>
+        
+        <div class="meu-texto">
 
-        <div class="container">
-            <div class="bloco">
-                <h1 class="ferramentas"> <a href="https://www.handtalk.me/br/sobre/" target="_blank">Hand Talk </a> </h1>
-                <p>O aplicativo é um tradutor simultâneo de idiomas e utiliza uma persona 3D, chamada Hugo, para realizar a tradução digital e automática para os surdos que utilizam a Língua Brasileira de Sinais (Libras), e também para aqueles que querem se comunicar mesmo não tendo conhecimento sobre Libras.</p>
+            <h1  id="tec-assis">A tecnologia assistiva </h1>
+            <p>Segundo a <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/decreto/d6949.htm" target="_blank">Convenção Sobre os Direitos das Pessoas com Deficiência </a>, “as pessoas com deficiência têm impedimentos de natureza física, intelectual ou sensorial, os quais, em interação com diversas barreiras, podem obstruir sua participação plena e efetiva na sociedade com as demais pessoas”</p>
+
+            <p>A tecnologia assistiva (TA) é o ramo que visa eliminar essas barreiras, para aumentar a participação, inclusão social, autonomia, qualidade de vida e independência das pessoas com deficiência ou mobilidade reduzida.</p>
+
+            <p>Ao falar sobre deficiências, é importante ter em mente o conceito de multiplicidade. As pessoas com deficiência não seguem um padrão e têm necessidades distintas. Por isso, reunimos abaixo uma lista de aplicativos e sites que agem de forma a ampliar a mobilidade, comunicação e habilidades de aprendizado:</p>
+
+            <div class="container">
+                <div class="bloco">
+                    <h1 class="ferramentas"> <a href="https://www.handtalk.me/br/sobre/" target="_blank">Hand Talk </a> </h1>
+                    <p>O aplicativo é um tradutor simultâneo de idiomas e utiliza uma persona 3D, chamada Hugo, para realizar a tradução digital e automática para os surdos que utilizam a Língua Brasileira de Sinais (Libras), e também para aqueles que querem se comunicar mesmo não tendo conhecimento sobre Libras.</p>
+                </div>
+                <div class="bloco">
+                    <h1 class="ferramentas"> <a href="https://guiaderodas.com/">Be My Eyes </a> </h1>
+                    <p>O app mapeia estabelecimentos comerciais com acessibilidade para pessoas que utilizam cadeira de rodas ou tenham mobilidade reduzida. A ideia é que os usuários observem o ambiente e relatem a existência de rampas ou a largura da porta, disponibilizando a informação para todos.</p>
+                    
+                </div>
+                <div class="bloco">
+                    <h1 class="ferramentas"> <a href="https://www.seeingai.com/">Seeing AI </a> </h1>
+                    <p>O aplicativo gratuito utiliza a câmera do smartphone e inteligência artificial para descrever pessoas, textos e objetos para quem não enxerga ou tem baixa visão. Usa a visão computacional e redes neurais para identificar objetos, cores, textos, cenas e até mesmo características físicas e expressões faciais de uma pessoa. Pode ser utilizado para organizar documentos em pastas e reconhecer as legendas das fotos nas redes sociais.</p>
+                </div>
+                <div class="bloco">
+                    <h1 class="ferramentas"> <a href="https://sites.usp.br/sofiafala/">SofiaFala </a> </h1>
+                    <p>O software ajuda a aprimorar a comunicação verbal daqueles que têm dificuldade no desenvolvimento da fala, como pessoas com síndrome de Down. Capta sons e imagens, produzidos durante a execução do exercício fonoaudiológico, e depois os analisa, oferecendo dois tipos de respostas sobre a performance do usuário: uma lúdico-educacional, com orientações para o paciente e/ou o responsável pelo treino; outra, com dados métricos e estatísticos para o fonoaudiólogo avaliar, acompanhar e orientar a evolução clínica do usuário.</p>
+                    
+                </div>
+                <div class="bloco">
+                    <h1 class="ferramentas"> <a href="https://expressia.life/">Expressia </a> </h1>
+                    <p>Aplicativo de comunicação que apoia o diálogo de pessoas não verbais. É possível criar cartões com figuras, fotos, texto, voz e músicas, e agrupá-los em pranchas temáticas de acordo com o contexto da comunicação. Em seguida é preciso tocar nos cartões em sequência para compor frases e expressar ideias e pensamentos. Também pode ser utilizado por profissionais com alunos ou pacientes. A função Estimulação Cognitiva cria atividades personalizadas de associação, ordenação ou contação de histórias.</p>
+                </div>
+
+                <div class="bloco">
+                    <h1 class="ferramentas"> <a href="https://telepatixweb.tecladointeligente.com.br/">TelepatiX </a> </h1>
+                    <p>O app ajuda na comunicação de pessoas com limitações de movimento severos, através de um alfabeto percorrido por uma varredura sequencial de linhas e colunas. O próprio usuário consegue escolher a velocidade dessa varredura. Tocando em qualquer parte da tela, a pessoa seleciona linhas e colunas com as letras. A seleção também pode ser feita pelo piscar dos olhos por meio da utilização de outros acessórios. O app sugere palavras a cada letra escolhida e, depois de escrever, é possível ter a frase lida.</p>
+
+                    
+                </div>
             </div>
-            <div class="bloco">
-                <h1 class="ferramentas"> <a href="https://guiaderodas.com/">Be My Eyes </a> </h1>
-                <p>O app mapeia estabelecimentos comerciais com acessibilidade para pessoas que utilizam cadeira de rodas ou tenham mobilidade reduzida. A ideia é que os usuários observem o ambiente e relatem a existência de rampas ou a largura da porta, disponibilizando a informação para todos.</p>
+
+            <img id="image1" src="imagens recursos/image.recursos.2.jpg">
+
+            <h1 id="edc-inclu">Educação Inclusiva </h1>
+
+            <p>A <a href="https://www.europarl.europa.eu/topics/pt/article/20200827STO85804/o-que-e-a-inteligencia-artificial-e-como-funciona#:~:text=A%20intelig%C3%AAncia%20artificial%20%28IA%29%20%C3%A9%20a%20capacidade%20que,racioc%C3%ADnio%2C%20a%20aprendizagem%2C%20o%20planeamento%20e%20a%20criatividade.">inteligência artificial (IA)</a> tem se mostrado uma ferramenta poderosa na transformação da educação, especialmente quando se trata de promover a inclusão. Ao adaptar-se às necessidades individuais dos alunos e ao fornecer suporte tecnológico para aqueles com deficiências, a IA está ajudando a fechar lacunas e a criar um ambiente de aprendizado mais equitativo.</p>
+
+            <p>Ferramentas de IA também são empregadas para promover a inclusão e a diversidade dentro do ambiente educacional. Elas ajudam a identificar e combater preconceitos implícitos nas práticas de ensino e nos materiais didáticos. Por exemplo, algoritmos podem analisar livros e currículos para garantir que representem de maneira justa e equitativa as diversas culturas e grupos sociais, promovendo uma educação mais inclusiva e abrangente. Vamos a alguma destas ferramentas:</p>
+
+            <div class="container">
+                <div class="bloco">
+                    <h1 class="ferramentas"> <a href="https://cloud.google.com/products/ai?utm_source=bing&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-SKWS-all-all-trial-p-dr-1710136-LUAC0016434&utm_content=text-ad-none-any-DEV_c-CRE_-ADGP_Hybrid+%7C+SKWS+-+MIX+%7C+Txt_+AI+%26+ML-Speech+to+Text-KWID_43700075920837672-kwd-78340613783191:loc-20&utm_term=KW_Audio+Transcription-ST_Audio+Transcription&&msclkid=6ce00cb4c91f1dd9c3726b2414807adc&gclid=6ce00cb4c91f1dd9c3726b2414807adc&gclsrc=3p.ds">Google Voice Typing </a> </h1>
+                    <p>Um sistema de reconhecimento de voz que permite que alunos com dificuldades de leitura e escrita interajam com dispositivos e softwares por meio da fala.</p>
+                </div>
+
+                    <div class="bloco">
+                        <h1 class="ferramentas"> <a href="https://www.bing.com/search?q=Kurzweil+3000&cvid=b660bf7a49924f5b8800824b21b65ab1&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQc3ODdqMGo0qAIIsAIB&FORM=ANAB01&adppc=EDGEDBB&PC=SMTS">Kurzweil 3000 </a> </h1>
+                        <p>Um software de leitura e escrita que utiliza IA para ajudar alunos com dificuldades de leitura, dislexia e outras deficiências de aprendizagem. Ele oferece leitura em voz alta, tradução de texto e ferramentas de estudo.</p>
+                    </div>
+
+                    <div class="bloco">
+                        <h1 class="ferramentas"> <a href="https://www.showmetech.com.br/cognitoys-o-brinquedo-que-usa-inteligencia-artificial-para-brincar-com-criancas/">CogniToys </a> </h1>
+                        <p>Brinquedos inteligentes que utilizam IA para interagir com crianças e fornecer aprendizado personalizado. Eles podem responder a perguntas, contar histórias e ajudar no desenvolvimento de habilidades cognitivas.</p>
+                    </div>
+
+                    <div class="bloco">
+                        <h1 class="ferramentas"> <a href="https://www.modmath.com/">ModMath </a> </h1>
+                        <p>Um aplicativo que ajuda alunos com dislexia e discalculia a resolver problemas matemáticos. Ele utiliza IA para fornecer feedback instantâneo e adaptar as lições às necessidades individuais dos alunos.</p>
+                        
+                    </div>
+
+                    <div class="bloco">
+                        <h1 class="ferramentas"> <a href="https://www.texthelp.com/en-gb/solutions/dsa/claroread/">ClaroRead </a> </h1>
+                        <p>Um software de leitura e escrita que oferece suporte a alunos com dificuldades de aprendizagem. Ele utiliza IA para converter texto em fala, fornecer previsões de palavras e ajudar na organização de ideias.</p>
+                        
+                    </div>
                 
             </div>
-            <div class="bloco">
-                <h1 class="ferramentas"> <a href="https://www.seeingai.com/">Seeing AI </a> </h1>
-                <p>O aplicativo gratuito utiliza a câmera do smartphone e inteligência artificial para descrever pessoas, textos e objetos para quem não enxerga ou tem baixa visão. Usa a visão computacional e redes neurais para identificar objetos, cores, textos, cenas e até mesmo características físicas e expressões faciais de uma pessoa. Pode ser utilizado para organizar documentos em pastas e reconhecer as legendas das fotos nas redes sociais.</p>
-            </div>
-            <div class="bloco">
-                <h1 class="ferramentas"> <a href="https://sites.usp.br/sofiafala/">SofiaFala </a> </h1>
-                <p>O software ajuda a aprimorar a comunicação verbal daqueles que têm dificuldade no desenvolvimento da fala, como pessoas com síndrome de Down. Capta sons e imagens, produzidos durante a execução do exercício fonoaudiológico, e depois os analisa, oferecendo dois tipos de respostas sobre a performance do usuário: uma lúdico-educacional, com orientações para o paciente e/ou o responsável pelo treino; outra, com dados métricos e estatísticos para o fonoaudiólogo avaliar, acompanhar e orientar a evolução clínica do usuário.</p>
-                
-            </div>
+
+            <img id="image1" src="imagens recursos/image.recursos.3.jpg">
+
+            <h1 id="apo-psico">Apoio Psicossocial </h1>
+
+            <p>O apoio psicossocial para pessoas com deficiência intelectual no Brasil é fundamental para promover o bem-estar emocional e social dessas pessoas. <a href="https://www.sns24.gov.pt/servico/aconselhamento-psicologico-no-sns-24/">Serviços de aconselhamento psicológico</a> e <a href="http://simplexterapias.com.br/">terapias especializadas</a> são oferecidos para ajudar a lidar com desafios emocionais, como ansiedade e estresse. Além disso, grupos de apoio proporcionam um espaço seguro para compartilhar experiências e construir uma rede de solidariedade, fortalecendo a autoestima e a resiliência.</p>
+
+            <p>Programas de inclusão social, como o <a href="https://www.gov.br/mds/pt-br/acoes-e-programas/suas/beneficios-assistenciais/beneficio-assistencial-ao-idoso-e-a-pessoa-com-deficiencia-bpc">Benefício de Prestação Continuada (BPC)</a> e o <a href="https://www.gov.br/inss/pt-br/direitos-e-deveres/beneficios-assistenciais/auxilio-inclusao-a-pessoa-com-deficiencia">Auxílio Inclusão</a>, também desempenham um papel crucial no apoio psicossocial. Esses programas garantem uma renda mínima e incentivam a participação no mercado de trabalho, promovendo a autonomia e a independência. A combinação de apoio emocional e inclusão social contribui para uma melhor qualidade de vida e integração plena na sociedade.</p>
+
+            <img id="image1" src="imagens recursos/image.recursos.4.jpg">
+
+            <h1 id="dir-legis">Direitos e Legislação </h1>
+
+            <p>No Brasil, os direitos das pessoas com deficiência intelectual são garantidos pela <a href="https://www.planalto.gov.br/ccivil_03/////////_Ato2015-2018/2015/Lei/L13146.htm">Lei Brasileira de Inclusão da Pessoa com Deficiência (LBI)</a>, também conhecida como Estatuto da Pessoa com Deficiência. Esta lei, instituída pela Lei nº 13.146 de 2015, visa assegurar e promover, em condições de igualdade, o exercício dos direitos e das liberdades fundamentais por pessoas com deficiência, visando à sua inclusão social e cidadania. A LBI é baseada na <a href="https://www.unicef.org/brazil/convencao-sobre-os-direitos-das-pessoas-com-deficiencia">Convenção sobre os Direitos das Pessoas com Deficiência</a>, ratificada pelo Brasil em 2008, que estabelece parâmetros globais para a proteção desses direitos.</p>
+
+            <p>A LBI define que a pessoa com deficiência é aquela que tem impedimento de longo prazo de natureza física, mental, intelectual ou sensorial, o qual, em interação com diversas barreiras, pode obstruir sua participação plena e efetiva na sociedade em igualdade de condições com as demais pessoas. A lei também estabelece que a avaliação da deficiência deve ser biopsicossocial, realizada por equipe multiprofissional e interdisciplinar, considerando os impedimentos nas funções e nas estruturas do corpo, os fatores socioambientais, psicológicos e pessoais, a limitação no desempenho de atividades e a restrição de participação1.</p>
+
+            <p>Além disso, a LBI garante o direito à educação inclusiva, à saúde, ao trabalho, à assistência social, à acessibilidade e à participação na vida política e pública. A lei também prevê a criação de instrumentos para avaliação da deficiência e a implementação de políticas públicas que promovam a inclusão e a igualdade de oportunidades. Para mais informações sobre a LBI e outros direitos das pessoas com deficiência, você pode acessar o <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">site oficial do Planalto</a> e o <a href="https://www2.camara.leg.br/a-camara/estruturaadm/gestao-na-camara-dos-deputados/responsabilidade-social-e-ambiental/acessibilidade/legislacao-2/leis-sobre-os-direitos-das-pessoas-com-deficiencia">Portal da Câmara dos Deputados</a>.</p>
+
+            <h1 id="sau-bem">Saúde e Bem-Estar </h1>
+
+            <h1 id="com-inclu">Comunidade e Inclusão Social </h1>
+
+            <footer>
+                <p>&copy; 2025 - Informações sobre PCDs</p>
+            </footer>
+
         </div>
 
     </main>
-    <footer>
-        <p>&copy; 2025 - Informações sobre PCDs</p>
-    </footer>
+    
 </body>
 </html>
