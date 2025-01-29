@@ -5,144 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Informações sobre os principais desafios enfrentados por pessoas com deficiência intelectual.">
     <title>Desafios para PCDs Intelectuais</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #28a745;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            background: #f4f4f4;
-            padding: 0.5rem;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        main {
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        section h2 {
-            color: #28a745;
-        }
-        .educacao {
-            max-width: 100%;
-            height: auto;
-            margin-top: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 400px;
-            height: 300px;
-        }
-
-        .tecnologia {
-            max-width: 100%;
-            height: auto;
-            margin-top: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 400px;
-            height: 300px;
-        }
-
-        .cognitivos {
-            max-width: 100%;
-            height: auto;
-            margin-top: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 400px;
-            height: 300px;
-        }
-
-        .inclusao_trabalho {
-            max-width: 100%;
-            height: auto;
-            margin-top: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 400px;
-            height: 300px;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Principais Desafios para PCDs Intelectuais</h1>
+        <h1>Desafios para PDCs</h1>
+        <p>Aprenda como a IA pode ajudar você ou alguém querido</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#educacao">Educação</a></li>
-            <li><a href="#tecnologia">Desafios Tecnológicos</a></li>
-            <li><a href="#cognitivos">Desafios Cognitivos</a></li>
-            <li><a href="#mercado-trabalho">Mercado de Trabalho</a></li>
-        </ul>
+
+    <nav class="bar"> 
+        <a href="home.html">Home</a>
+        <a href="desafios.html">Desafios</a>
+        <a href="#informacoes">Boas Práticas</a>
+        <a href="#recursos">Recursos</a>
     </nav>
-    <main class="container">
-        <section id="educacao">
-            <h2>Educação</h2>
-            <p>
-                Pessoas com deficiência intelectual enfrentam barreiras significativas na educação, como a falta de materiais adaptados e de professores capacitados para compreender suas necessidades específicas.
-                A inclusão escolar é frequentemente desafiada pela ausência de suporte individualizado.
-            </p>
-            <img class="educacao" src=img_desafios/educacao_inclusiva.jpg alt="Imagem representando educação inclusiva">
-        </section>
- 
-        <section id="tecnologia">
-            <h2>Desafios Tecnológicos</h2>
-            <p>
-                Muitos recursos tecnológicos não são acessíveis para pessoas com deficiência intelectual. Interfaces complexas e a falta de personalização dificultam o uso de ferramentas digitais que poderiam auxiliá-las no aprendizado e no dia a dia.
-            </p>
-            <img class="tecnologia" src=img_desafios/desafio_tecnologico.jpg alt="Imagem representando desafios tecnológicos">
-        </section>
- 
-        <section id="cognitivos">
-            <h2>Desafios Cognitivos</h2>
-            <p>
-                Limitações na memória, concentração e habilidades de resolução de problemas são barreiras comuns. Essas dificuldades podem impactar a autonomia e a capacidade de realizar atividades diárias ou acompanhar o ritmo de tarefas escolares e profissionais.
-            </p>
-            <img class="cognitivos" src =img_desafios/desafio_cognitivo.jpg alt= "Imagem representando desafios cognitivos">
-        </section>
- 
-        <section id="mercado-trabalho">
-            <h2>Mercado de Trabalho</h2>
-            <p>
-                A inserção no mercado de trabalho é um desafio devido ao preconceito e à falta de compreensão sobre como adaptar funções para pessoas com deficiência intelectual. Programas de inclusão ainda são escassos, e oportunidades são limitadas.
-            </p>
-            <img class="inclusao_trabalho" src="img_desafios/inclusao_trabalho.jpg" alt="Imagem representando inclusão no mercado de trabalho">
-        </section>
-    </main>
+
+    <section>
+        <div class="img">
+            <img src=img_desafios/educacao_inclusiva.jpg alt="Imagem representando educação inclusiva">
+        </div>
+        <div class="topic" id="educação">
+            <div>
+                <h2>Educação</h2>
+                <p>
+                   Pessoas com deficiência (PCDs) enfrentam barreiras significativas na educação, como a falta de materiais adaptados e de professores capacitados para compreender suas necessidades específicas. A inclusão escolar é frequentemente desafiada pela ausência de suporte individualizado. Investir em recursos educacionais acessíveis e na capacitação de educadores é essencial para promover um ambiente inclusivo e acolhedor para todos os alunos.
+
+                   A seguir dicas de como a inteligência artificial (IA) pode ajudar a superar as dificuldades enfrentadas por pessoas com deficiência (PCDs) na educação:
+
+                   <ol>
+                       <li><b>Tutoriais Personalizados:</b> A IA pode criar tutoriais personalizados que se adaptam ao ritmo e estilo de aprendizagem de cada aluno. Plataformas de aprendizado online podem usar algoritmos de IA para identificar áreas onde o aluno precisa de mais ajuda e fornecer recursos específicos para essas necessidades.</li>
+                       <br>
+                       <li><b>Chatbots Educacionais:</b> Chatbots baseados em IA podem fornecer suporte 24/7 para responder a perguntas e esclarecer dúvidas dos alunos. Esses chatbots podem ser programados para oferecer explicações detalhadas e exemplos adicionais, ajudando os alunos a entender melhor os conceitos.</li>
+                       <br>
+                       <li><b>Realidade Aumentada (AR) e Realidade Virtual (VR):</b> Tecnologias de AR e VR podem criar ambientes de aprendizado imersivos e interativos. Essas tecnologias podem ser usadas para simular situações do mundo real, tornando o aprendizado mais envolvente e acessível para PCDs.</li>
+                       <br>
+                       <li><b>Aplicativos de Treinamento Cognitivo:</b> Aplicativos baseados em IA podem oferecer exercícios de treinamento cognitivo personalizados para ajudar PCDs a desenvolver habilidades específicas. Esses aplicativos podem ser ajustados para atender às necessidades individuais de cada aluno.</li>
+                   </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="topic" id="Desafios-Tecnológicos">
+            <div>
+                <h2>Desafios Tecnológicos</h2>
+                <p>
+                    Muitos recursos tecnológicos não são acessíveis para pessoas com deficiência intelectual. Interfaces complexas e a falta de personalização dificultam o uso de ferramentas digitais que poderiam auxiliá-las no aprendizado e no dia a dia.
+                </p>
+            </div>
+        </div>
+
+        <div class="img">
+            <img  src=img_desafios/desafio_tecnologico.jpg alt="Imagem representando desafios tecnológicos">
+        </div>
+        
+
+        <div class="topic" id="Desafios-Cognitivos">
+            <div>
+                <h2>Desafios Cognitivos</h2>
+                <p>
+                    Limitações na memória, concentração e habilidades de resolução de problemas são barreiras comuns. Essas dificuldades podem impactar a autonomia e a capacidade de realizar atividades diárias ou acompanhar o ritmo de tarefas escolares e profissionais.
+                </p>
+            </div>
+        </div>
+
+        <div class="img">
+            <img  src =img_desafios/desafio_cognitivo.jpg alt= "Imagem representando desafios cognitivos">
+        </div>
+        
+        <div class="topic" id="Mercado-Trabalho">
+            <div>
+                <h2>Mercado de Trabalho</h2>
+                <p>
+                    A inserção no mercado de trabalho é um desafio devido ao preconceito e à falta de compreensão sobre como adaptar funções para pessoas com deficiência intelectual. Programas de inclusão ainda são escassos, e oportunidades são limitadas.
+                </p>
+            </div>
+        </div>
+
+        <div  class="img">
+            <img src="img_desafios/inclusao_trabalho.jpg" alt="Imagem representando inclusão no mercado de trabalho">
+        </div>
+    </section>
+            
+        
     <footer>
         <p>&copy; 2025 - PCDs Intelectuais</p>
     </footer>
