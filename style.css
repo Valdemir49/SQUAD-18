@@ -15,8 +15,9 @@ header {
     width: 100%;
 }
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+
+    margin: 0px;
+    font-size: 1.9rem;
 }
 
 header p {
@@ -101,7 +102,7 @@ section img{
     font-size: 1.2rem;
 }
 
-.topic a {
+.botao  {
     color: #fff;
     background: #0057b7;
     padding: 10px 15px;
@@ -109,6 +110,7 @@ section img{
     text-decoration: none;
     font-size: 1rem;
 }
+
 
 .topic a:hover {
     background: #003f8a;
@@ -160,10 +162,9 @@ footer p {
     text-align: center;;
 }
 #image1{
-    width: 100%; /* A largura da imagem será 100% do contêiner pai */
+    width: 90%; /* A largura da imagem será 100% do contêiner pai */
     height: auto; auto; /* A altura será ajustada automaticamente para manter a proporção */
-    border: 2px solid #007BFF;
-    display: block;
+    display: flex;
     margin: 0 auto;
 }
 .meu-texto{
@@ -175,21 +176,7 @@ footer p {
     margin: 0 auto;
     
 }
-/*botões */
-.meu-botao {
-    background-color:  #007BFF; /* Cor de fundo verde */
-    color: white; /* Cor do texto branca */
-    padding: 1% 2%; /* Espaçamento interno */
-    text-align: center; /* Alinhamento do texto */
-    text-decoration: none; /* Sem sublinhado */
-    display: inline-block; /* Exibição em linha */
-    font-size: 1vw; /* Tamanho da fonte em unidades de viewport */
-    margin: 1% 0.5%; /* Margem */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    border: none; /* Sem borda */
-    border-radius: 4px; /* Bordas arredondadas */
 
-}
 .ferramentas{
     font-size: 14px; 
 }
@@ -198,14 +185,4 @@ footer p {
     display: flex;
     overflow-x: scroll; /* Permite a rolagem horizontal */ 
     width: 65vw; /* Largura do contêiner igual à largura da viewport */
-}
-
-/* blocos */
-.bloco {
-    border: 1px solid #007BFF; /* Borda preta */
-    padding: 10px; /* Espaçamento interno */
-    margin: 10px; /* Margem */
-    background-color: #f9f9f9; /* Cor de fundo */
-    min-width: 300px; /* Largura dos blocos */
-    box-sizing: border-box; /* Inclui a borda e o padding na largura total */
 }
