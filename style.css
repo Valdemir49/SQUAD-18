@@ -1,0 +1,188 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    line-height: 1.6;
+    color: #333;
+}
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+header h1 {
+
+    margin: 0px;
+    font-size: 1.9rem;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+    background: #f4f4f4;
+    padding: 0.5rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+    nav ul li {
+    margin: 0 1rem;
+}
+    nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a {
+    color: #0057b7;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 5px 5%;
+    margin-bottom: 2rem;
+}
+section h2 {
+    color: #007BFF;
+}
+
+
+section img{
+    width: 50%;
+    height: auto;
+    padding: 1px 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    height: auto; /* Altura da div igual à altura da viewport */
+}
+
+.topic {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.topic h2 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    color: #0057b7;
+}
+
+.topic p {
+    
+    font-size: 1.2rem;
+}
+
+.botao  {
+    color: #fff;
+    background: #0057b7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+.topic a:hover {
+    background: #003f8a;
+}
+main {
+    padding: 2rem;
+}
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+    
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin: 10px 0;
+}
+
+.resources ul li a {
+    color: #0057b7;
+    text-decoration: none;
+}
+
+.resources ul li a:hover {
+    text-decoration: underline;
+}
+#texto-motivador{
+    font-size: 20px; 
+    font-weight: bold;
+    text-align: center;;
+}
+#image1{
+    width: 90%; /* A largura da imagem será 100% do contêiner pai */
+    height: auto; auto; /* A altura será ajustada automaticamente para manter a proporção */
+    display: flex;
+    margin: 0 auto;
+}
+.meu-texto{
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura do contêiner igual à altura da viewport */
+    text-align: left; /* Centraliza o texto dentro dos parágrafos */
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.ferramentas{
+    font-size: 14px; 
+}
+/* contêiner */
+.container-1 {
+    display: flex;
+    overflow-x: scroll; /* Permite a rolagem horizontal */ 
+    width: 65vw; /* Largura do contêiner igual à largura da viewport */
+}
