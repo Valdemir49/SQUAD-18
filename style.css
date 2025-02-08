@@ -55,6 +55,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+ .navbar-nav .nav-item .nav-link {
+    margin-right: 10px;
+}
+
 section {
     padding: 5px 5%;
     margin-bottom: 2rem;
@@ -63,7 +67,6 @@ section h2 {
     color: #007BFF;
 }
 
-
 section img{
     width: 50%;
     height: auto;
@@ -71,7 +74,6 @@ section img{
     align-items: center;
     justify-content: center;
 }
-
 
 .img {
     display: flex;
@@ -97,8 +99,7 @@ section img{
     color: #0057b7;
 }
 
-.topic p {
-    
+.topic p { 
     font-size: 1.2rem;
 }
 
@@ -110,7 +111,6 @@ section img{
     text-decoration: none;
     font-size: 1rem;
 }
-
 
 .topic a:hover {
     background: #003f8a;
@@ -135,8 +135,7 @@ footer p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .resources ul {
@@ -163,7 +162,7 @@ footer p {
 }
 #image1{
     width: 90%; /* A largura da imagem será 100% do contêiner pai */
-    height: auto;  /* A altura será ajustada automaticamente para manter a proporção */
+    height: auto; auto; /* A altura será ajustada automaticamente para manter a proporção */
     display: flex;
     margin: 0 auto;
 }
@@ -173,8 +172,7 @@ footer p {
     height: 100vh; /* Altura do contêiner igual à altura da viewport */
     text-align: left; /* Centraliza o texto dentro dos parágrafos */
     width: 70%;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 .ferramentas{
@@ -185,6 +183,33 @@ footer p {
     display: flex;
     overflow-x: scroll; /* Permite a rolagem horizontal */ 
     width: 65vw; /* Largura do contêiner igual à largura da viewport */
+}
+
+#newsletter {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+#newsletter h2 {
+    margin-bottom: 20px;
+}
+#newsletter .form-group {
+    margin-bottom: 15px;
+}
+
+
+#newsletter button {
+    background-color: #8b0000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: #a52a2a;
 }
 
 /* Quadro de avisos */
@@ -289,44 +314,4 @@ footer p {
 
 .evento button:hover {
     background-color: #0056b3;
-}
-
-
-/*Newsletter*/  
-
-#newsletter {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-#newsletter form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-#newsletter input {
-    padding: 10px;
-    font-size: 16px;
-    margin: 5px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#newsletter button {
-    background-color: #8b0000;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#newsletter button:hover {
-    background-color: #a52a2a;
 }

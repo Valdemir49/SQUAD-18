@@ -6,7 +6,7 @@
     <meta name="description" content="Boas práticas para inclusão de pessoas com deficiência (PCDs).">
     <title>Boas Práticas - PCDs</title>
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,11 +14,28 @@
         <p>Explorando informações, desafios e oportunidades para pessoas com deficiência.</p>
     </header>
 
-    <nav> 
-        <a href="home.html">Home</a>
-        <a href="desafios.html">Desafios</a>
-        <a href="boas_praticas.html">Boas Práticas</a>
-        <a href="recursos.html">Recursos</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="desafios.html">Desafios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="boas_praticas.html">Boas Práticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="recursos.html">Recursos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <section>
@@ -63,8 +80,27 @@
 
     </section>
 
+    <div class="container my-5">
+        <section id="newsletter" class="text-center">
+            <h2>CADASTRE-SE PARA RECEBER A NOSSA PROGRAMAÇÃO</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </div>
+
     <footer>
         <p>&copy; 2025 Desafios para PCDs. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
