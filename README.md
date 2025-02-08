@@ -82,7 +82,7 @@ Aqui estão as melhorias e recursos que pode ser adicionados ao site:
 - *Desenvolvedor(a)*: [valdemirsouza]
 - *Desenvolvedor(a)*: [gabi]
 - *Data de início*: [10/01/2025]
-- *ùtima atualização*: [03/02/2025]
+- *ùtima atualização*: [07/02/2025]
 
 ---
 ## Observações
