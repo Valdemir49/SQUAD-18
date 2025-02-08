@@ -1,9 +1,12 @@
 ## Desafios para PCDs - SQUAD 18
 Membros:
-Antonio vieira costa Silva
-Gabriela Minoboli Della Noce
-Valdemir Souza dos Passos Neto
-(não definimos lideraça)
+Antonio vieira costa Silva;
+
+Gabriela Minoboli Della Noce;
+
+Valdemir Souza dos Passos Neto;
+
+(não definimos liderança)
 
 ## Descrição
 Este projeto é um site voltado para informar, apoiar e compartilhar desafios e oportunidades para pessoas com deficiência (PCDs). Ele aborda temas como:
